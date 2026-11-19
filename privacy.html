@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>我的书房 · 隐私政策 / Privacy Policy</title>
+<style>
+  :root { --fg:#2b2620; --muted:#6f675c; --line:#e6dfd2; --bg:#fbf8f1; --accent:#b7791f; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.75 "Microsoft YaHei", "PingFang SC", system-ui, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 56px 24px 96px; }
+  header { border-bottom:1px solid var(--line); padding-bottom:20px; margin-bottom:32px; }
+  h1 { font-size:26px; margin:0 0 6px; letter-spacing:.02em; }
+  .meta { color:var(--muted); font-size:13px; }
+  h2 { font-size:18px; margin:34px 0 10px; }
+  p, li { color:#3a342c; }
+  ul { padding-left:20px; }
+  li { margin:6px 0; }
+  code { background:#f1eadc; padding:1px 5px; border-radius:4px; font-size:14px; }
+  .box { background:#fffdf8; border:1px solid var(--line); border-radius:10px; padding:18px 20px; margin:18px 0; }
+  a { color:var(--accent); }
+  .en { margin-top:56px; border-top:1px solid var(--line); padding-top:32px; }
+  footer { margin-top:48px; color:var(--muted); font-size:13px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>我的书房 · 隐私政策</h1>
+    <p class="meta">适用版本：v0.2.2 及以后 · 生效日期：2026-11-19 · 最后更新：2026-11-19</p>
+  </header>
+
+  <div class="box">
+    <strong>一句话总结：</strong>你的书籍、笔记、阅读进度和统计全部保存在你自己的电脑上。
+    我们没有服务器，没有账号体系，也不收集任何使用数据。
+  </div>
+
+  <h2>1. 我们收集哪些信息</h2>
+  <p>不收集。本应用没有账号、没有云端服务、没有行为统计、没有崩溃上报，也不含任何第三方分析 SDK。</p>
+
+  <h2>2. 数据保存在哪里</h2>
+  <ul>
+    <li>书架、笔记、阅读进度、阅读时长保存在本机的浏览器存储（localStorage / IndexedDB）中；</li>
+    <li>导入的书籍原文件、封面和笔记附件保存在本机的 IndexedDB 中；</li>
+    <li>数据目录默认为程序所在目录下的 <code>data\</code>；若该目录不可写，则使用 <code>%LOCALAPPDATA%\MyStudyRoom\data</code>；也可通过环境变量 <code>MYSTUDYROOM_DATA_DIR</code> 指定。</li>
+    <li>这些数据不会离开你的设备，除非你主动使用「导出备份」功能。</li>
+  </ul>
+
+  <h2>3. 联网时会发生什么</h2>
+  <p>只有在<strong>你主动使用在线功能</strong>时，应用才联网。本地服务仅监听 <code>127.0.0.1</code>，不对局域网或互联网开放。</p>
+  <ul>
+    <li><strong>公版书搜索</strong>：会把你的<em>搜索关键词（书名/作者）</em>发送给 Project Gutenberg、Standard Ebooks、Planet eBook、书格等公版书站点，用于返回搜索结果；</li>
+    <li><strong>封面补全</strong>：可能把<em>书名与作者</em>发送给 Bing / Google 图片搜索，用于查找封面；</li>
+    <li><strong>中文书名翻译</strong>：在检索外文原版时，可能把<em>中文书名</em>发送给 MyMemory 翻译接口；</li>
+    <li><strong>下载</strong>：下载书籍时，目标站点会看到你的 IP 地址，这与使用浏览器访问该站点相同。</li>
+  </ul>
+  <p>上述请求<strong>不包含</strong>你的笔记、阅读进度、书架内容或设备标识。</p>
+
+  <h2>4. 我们不做什么</h2>
+  <ul>
+    <li>不创建用户画像，不做广告投放，不共享或出售任何数据；</li>
+    <li>不读取与本应用无关的文件；仅在导入时读取你主动选择的文件；</li>
+    <li>不在你不知情的情况下发起网络请求。</li>
+  </ul>
+
+  <h2>5. 儿童隐私</h2>
+  <p>本应用不面向儿童设计，也不收集任何年龄信息。用户导入的内容由用户自行负责。</p>
+
+  <h2>6. 数据的删除</h2>
+  <ul>
+    <li>在应用内删除书籍，会同时删除对应的正文、封面与笔记附件；</li>
+    <li>卸载应用后，可手动删除数据目录（<code>data\</code> 或 <code>%LOCALAPPDATA%\MyStudyRoom</code>）以彻底清除所有数据；</li>
+    <li>应用不保留任何云端副本，因此删除后无法恢复。</li>
+  </ul>
+
+  <h2>7. 第三方内容与版权</h2>
+  <p>本应用不附带任何受版权保护的书籍。在线搜索仅面向公共领域作品；用户导入的书籍内容及其使用责任由用户自行承担。</p>
+
+  <h2>8. 政策变更</h2>
+  <p>若未来版本新增联网功能或数据收集，我们会先更新本页面并在应用内提示。</p>
+
+  <h2>9. 联系方式</h2>
+  <p>隐私相关问题请联系：<a href="mailto:327762710@qq.com">327762710@qq.com</a></p>
+
+  <section class="en">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Applies to v0.2.2 and later · Effective 2026-11-19</p>
+
+    <div class="box">
+      <strong>In one sentence:</strong> your books, notes, reading progress and statistics stay on your own PC.
+      There is no server, no account system, and no usage data collection.
+    </div>
+
+    <h2>1. What we collect</h2>
+    <p>Nothing. The app has no accounts, no cloud service, no analytics, no crash reporting and no third-party tracking SDKs.</p>
+
+    <h2>2. Where your data lives</h2>
+    <p>Books, notes, progress and reading time are stored locally (localStorage / IndexedDB), together with imported files and covers. The default data folder is <code>data\</code> next to the executable, falling back to <code>%LOCALAPPDATA%\MyStudyRoom\data</code> when that folder is not writable. Data leaves your device only when you export a backup yourself.</p>
+
+    <h2>3. What happens when the app goes online</h2>
+    <p>Network access happens only when you use an online feature. The bundled local server listens on <code>127.0.0.1</code> only.</p>
+    <ul>
+      <li><strong>Public-domain search</strong> sends your search keywords (title/author) to Project Gutenberg, Standard Ebooks, Planet eBook and Shuge;</li>
+      <li><strong>Cover lookup</strong> may send the title and author to Bing / Google image search;</li>
+      <li><strong>Title translation</strong> may send a Chinese title to the MyMemory translation API;</li>
+      <li><strong>Downloads</strong> expose your IP address to the source site, exactly as a browser would.</li>
+    </ul>
+    <p>None of these requests include your notes, reading progress, library contents or device identifiers.</p>
+
+    <h2>4. What we never do</h2>
+    <p>No profiling, no advertising, no selling or sharing of data, no reading of unrelated files, no background network requests.</p>
+
+    <h2>5. Children</h2>
+    <p>The app is not directed at children and collects no age information. Content imported by the user is the user's responsibility.</p>
+
+    <h2>6. Deleting your data</h2>
+    <p>Deleting a book inside the app also deletes its text, cover and note attachments. After uninstalling, remove the data folder to erase everything. There is no cloud copy, so deleted data cannot be recovered.</p>
+
+    <h2>7. Third-party content and copyright</h2>
+    <p>No copyrighted books are bundled. Online search targets public-domain works only; responsibility for imported content rests with the user.</p>
+
+    <h2>8. Changes</h2>
+    <p>If a future version adds online features or data collection, this page will be updated first and the app will notify you.</p>
+
+    <h2>9. Contact</h2>
+    <p><a href="mailto:327762710@qq.com">327762710@qq.com</a></p>
+  </section>
+
+  <footer>
+    我的书房 · My Study Room — 本页面可自行托管（GitHub Pages / Netlify / 任意静态托管），
+    托管后把地址填入 Partner Center 的「隐私政策 URL」。
+  </footer>
+</main>
+</body>
+</html>
